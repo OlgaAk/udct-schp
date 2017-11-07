@@ -122,6 +122,7 @@ gulp.task('watch', function () {
   gulp.watch(['public/scss/**/*.scss'], ['css']);
   gulp.watch(['templates/*.hbs'], ['templates:server']);
   gulp.watch(['server/**/*.js'], ['js:server']);
+
   gulp.watch(['public/imgs/**/*', 'public/avatars/**/*', 'server/*.txt', 'public/*.json'], ['copy']);
 
   Object.keys(jsBundles).forEach(function(key) {
